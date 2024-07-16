@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Remover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #3498db; /* Tom de azul */
+            color: #fff; /* Cor do texto */
+            font-family: 'Arial', sans-serif; /* Fonte do texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 100% da altura da viewport */
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff; /* Cor do link */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        form {
+            margin-top: 20px; /* Espaçamento entre o link e o formulário */
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #2ecc71; /* Cor de fundo do botão */
+            color: #fff; /* Cor do texto do botão */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://localhost:8080/PI2-Aguinha/">
+        <h1>AGUINHA</h1>
+    </a>
+    <form method="get" action="remove.jsp">
+        <label for="id_checagem">ID da checagem que deseja remover: </label>
+        <input type="number" name="id_checagem" id="id_checagem" required>
+        <input type="submit" name="remover">
+    </form>
+</body>
+</html>
+
